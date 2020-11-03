@@ -7,7 +7,7 @@ import {over} from './api/over'
 import useIsItFinallyOver from './useIsItFinallyOver'
 
 export interface Props {
-  initialOver: Over | NotOver
+  initialOver: Over | NotOver | null
 }
 
 export default function Home(props: Props) {
@@ -61,7 +61,7 @@ export default function Home(props: Props) {
         </Fragment>
       }
     } else {
-      return <h1 className={styles.title}>please wait...</h1>
+      return <h1 className={styles.title}>asking, please wait...</h1>
     }
   }
 
@@ -79,7 +79,7 @@ export default function Home(props: Props) {
   )
 }
 
-export const getStaticProps: GetStaticProps<Props> = async (context) => {
-  const initialOver = over()
-  return { props: { initialOver } }
-}
+// export const getStaticProps: GetStaticProps<Props> = async (context) => {
+//   const initialOver = over()
+//   return { props: { initialOver } }
+// }
