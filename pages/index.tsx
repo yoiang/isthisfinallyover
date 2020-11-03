@@ -12,7 +12,7 @@ export interface Props {
 
 export default function Home(props: Props) {
   const { result, error } = useIsItFinallyOver({
-    refreshInterval: 1000
+    refreshInterval: 60000
   })
 
   const renderSources = (sources: [string, string][]) => {
