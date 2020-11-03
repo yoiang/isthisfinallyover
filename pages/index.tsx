@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import { NotOver, Over } from '../model/IsItFinallyOver'
 import styles from '../styles/Home.module.css'
 import {over} from './api/over'
-import useIsItFinallyOver from './useIsItFinallyOver'
+import useIsItFinallyOver from '../data/useIsItFinallyOver'
 
 export interface Props {
   initialOver: Over | NotOver | null
@@ -79,7 +79,7 @@ export default function Home(props: Props) {
   )
 }
 
-// export const getStaticProps: GetStaticProps<Props> = async (context) => {
-//   const initialOver = over()
-//   return { props: { initialOver } }
-// }
+export const getStaticProps: GetStaticProps<Props> = async (context) => {
+  const initialOver = over()
+  return { props: { initialOver } }
+}
