@@ -43,6 +43,14 @@
   font-style: italic;
 }
 
+.main > a {
+  margin: 0;
+  line-height: 1;
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
 .title,
 .description {
   text-align: center;

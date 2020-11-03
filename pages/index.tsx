@@ -54,7 +54,11 @@ export default function Home(props: Props) {
           </Fragment>
         
         case false:
-          return <h1 className={styles.title}>No</h1>
+          return <Fragment>
+            <h1 className={styles.title}>No</h1>
+            <h2 className={styles.sectionTitle}><a href="https://www.vote.org/polling-place-locator/">Please go vote.</a></h2>
+            <a href="https://www.vote.org/polling-place-locator/">vote.org</a>
+        </Fragment>
       }
     } else {
       return <h1 className={styles.title}>please wait...</h1>
