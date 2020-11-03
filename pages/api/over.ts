@@ -3,7 +3,8 @@ import { Over, NotOver } from '../../model/IsItFinallyOver'
 
 export const over = () : Over | NotOver => {
   return {
-    over: false
+    over: true,
+    sources: []
   }
 }
 
