@@ -56,8 +56,7 @@ export default function Home(props: Props) {
         case false:
           return <Fragment>
             <h1 className={styles.title}>No</h1>
-            <h2 className={styles.sectionTitle}><a href="https://www.vote.org/polling-place-locator/">Please go vote.</a></h2>
-            <a href="https://www.vote.org/polling-place-locator/">vote.org</a>
+            <h2 className={styles.sectionTitle}>Votes are still being counted in numerous states.</h2>
         </Fragment>
       }
     } else {
